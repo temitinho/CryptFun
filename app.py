@@ -18,6 +18,7 @@ def encrypt_letter(letter):
         return letter
 
 def encrypt_text(text):
+    text = text.lower()
     text_encripted = ""
     for char in text:
         text_encripted +=  encrypt_letter(char)
